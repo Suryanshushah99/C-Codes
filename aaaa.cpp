@@ -1,3 +1,6 @@
+#added a one more class square 
+#added return statement at the end of main() function
+
 #include<iostream>
 
 using namespace std;
@@ -54,6 +57,14 @@ class circle: public shape
 			return (3.14*length*length);
 		}
 };
+class square: public shape
+{
+	public:
+		float display()
+		{
+			return (length*length);
+		}
+};
 
 
 int main()
@@ -67,7 +78,10 @@ int main()
 	 circle c;
 	 c.getdata(5.0,0.0);
 	 cout<<" \n Area is :"<<c.display();
-	 
+	square s;
+	s.getdata(9.0,0.0);
+	 cout<<" \n Area is :"<<s.display();
+	 return 0;
 	 
 }
 
